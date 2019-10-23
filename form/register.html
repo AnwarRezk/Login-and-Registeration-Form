@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Registration Form">
+    <meta name="author" content="Anwar Rezk">
+    <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Database">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+    <div class="registerBox">
+        <img src="images/user.jpg" class="user">
+        <h2>Register Here</h2>
+        <form name="registration_form" method="post" action="serverend.php" onsubmit="return validateForm()">
+
+            <p for="Email">E-mail</p>
+            <input name="Email" type="text"autocomplete="off"></br>
+
+            <p for="Username">Username</p>
+            <input name="Username" type="text" autocomplete="off"></br>
+
+
+            <p for="Password">Password</p>
+            <input name="Password" type="password"></br>
+
+            <input name="submit" type="submit" value="Register">
+            <p>Already a member ? <a href="login.html"> Login</a></p>
+        </form>
+    </div>
+	
+</body>
+
+
+
+</html>

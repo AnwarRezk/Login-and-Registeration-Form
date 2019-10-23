@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Login Form ">
+    <meta name="author" content="Anwar Rezk">
+    <meta name="keywords" content="HTML,CSS,JavaScript,PHP,Database">
+</head>
+<script>
+function validateLogin() 
+{
+    var username_val = document.forms["login_form"]["Username"].value;
+    var password_val = document.forms["login_form"]["Password"].value;
+    if (username_val == "") {
+        alert("Username field cannot be empty ");
+        return false;
+    }
+    if (password_val == "") 
+    {
+        alert("Password field cannot be empty ");
+        return false;
+    }
+}
+</script>
+
+<body>
+    <div class="loginBox">
+        <img src="images/user.jpg" class="user">
+        <h2>Log In Here</h2>
+        <form name="login_form" method="post" action="serverend.php" onsubmit="return validateLogin()">
+            <p for="Username">Username</p>
+            <input name="Username" type="text" autocomplete="off"></br>
+            <p for="Password">Password</p>
+            <input name="Password" type="password"></br>
+            <input name="submit" type="submit" value="Login">
+            <p>Not a member ? <a href="register.html"> Register</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
